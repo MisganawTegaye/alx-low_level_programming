@@ -1,32 +1,22 @@
 #include "main.h"
 
 /**
- * print_sign - prints the sign of a number
- * @n: the int to check
+ * print_last_digit - prints the last digit of a number
+ * @n: the int to extract the last digit from
  *
- * Return: 1 and prints '+' if n is greater than zero
- *         0 and prints '0' if n is zero
- *        -1 and prints '-' if n is less than zero
+ * Return: value of the last digit
  */
-int print_sign(int n)
+int print_last_digit(int n)
 {
-	if (n > 0)
-	{
-		_putchar('+');
-		return (1);
-	}
-	else if (n == 0)
-	{
-		_putchar('0');
-		return (0);
-	}
-	else if (n < 0)
-	{
-		_putchar('-');
-		return (-1);
-	}
+	int a;
 
-	/* Add a return statement if n does not fall into any of the conditions above */
-	return (0);
+	if (n < 0)
+		n = -n;
+
+	a = n % 10;
+
+	_putchar(a + '0');
+
+	return (a);
 }
 
