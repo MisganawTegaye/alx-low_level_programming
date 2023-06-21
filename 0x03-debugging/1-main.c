@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prevents an infinite loop
+ * main - causes an infinite loop
  * Return: 0
  */
 int main(void)
@@ -12,11 +12,12 @@ int main(void)
 
     i = 0;
 
+    /* Commenting out the code causing infinite loop
     while (i < 10)
     {
         putchar(i);
-        i++;  // Increment i to prevent infinite loop
     }
+    */
 
     printf("Infinite loop avoided! \\o/\n");
 
