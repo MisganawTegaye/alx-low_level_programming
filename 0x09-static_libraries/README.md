@@ -1,1 +1,1 @@
-0x09-static_libraries readme file
+0x09-static_libraries
